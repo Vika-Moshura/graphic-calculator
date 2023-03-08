@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="options d-flex-between">
+            <div>
+                <div class="d-flex-between">
+                    <div>Storage</div>
+                    <div><input oninput="updateRange(event)" id="storage-input" min="0" max="1000" type="number"
+                            value="0"><span>GB</span></div>
+                </div>
+                <input oninput="updateNumber(event)" type="range" step="1" value="0" name="storage" id="storage" min="0"
+                    max="1000">
+                <div class="d-flex-between">
+                    <div>0</div>
+                    <div>1000</div>
+                </div>
+
+            </div>
+            <div>
+                <div class="d-flex-between">
+                    <div>Transfer</div>
+                    <div><input oninput="updateRange(event)" id="transfer-input" min="0" max="1000" type="number"
+                            value="0"><span>GB</span></div>
+                </div>
+                <input oninput="updateNumber(event)" type="range" step="1" value="0" name="transfer" id="transfer"
+                    min="0" max="1000">
+                <div class="d-flex-between">
+                    <div>0</div>
+                    <div>1000</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="prices d-flex-column">
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
